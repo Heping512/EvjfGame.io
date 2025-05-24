@@ -1,0 +1,95 @@
+﻿.background {
+    background-image: url("img/mykonos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+    .background::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(255, 255, 255, 0.85); /* éclaircit l’image */
+        z-index: 0;
+    }
+
+    .background > * {
+        position: relative;
+        z-index: 1;
+    }
+
+.question {
+    font-family: 'Segoe UI', 'Trebuchet MS', sans-serif; /* élégante, moderne */
+    font-size : 40px;
+    color: #022859; /* noir profond */
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 90%;
+    margin-top: 5%;
+}
+
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+    gap: 1rem;
+    width: 100%;
+    max-width: 90%;
+    margin: 5% auto;
+}
+
+.answer-button {
+    background-color: #0597F2;
+    color: white;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    white-space: normal; /* pour forcer le retour à la ligne si texte long */
+    word-wrap: break-word;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+    .answer-button:hover {
+        background-color: #0583F2;
+    }
+
+.timer-container {
+    width: 100%;
+    max-width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.timer-label {
+    font-weight: bold;
+    font-size : 10px;
+    color: #333;
+}
+
+.progress-bar-background {
+    width: 100%;
+    height: 15px;
+    background-color: #D9D0C7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #0388A6;
+    transition: width 1s linear;
+}
