@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/quizz.css" />
     <link rel="stylesheet" href="css/pute.css" />
+    <link rel="stylesheet" href="css/photoBingo.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="EvjfGame.styles.css" rel="stylesheet" />
 </head>
@@ -28,8 +29,30 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+
+    <!-- Firebase compat scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAAB3vGuPI0WeH1cVtSfn90ME0QcNxBe1o",
+            authDomain: "evjfgame.firebaseapp.com",
+            projectId: "evjfgame",
+            storageBucket: "evjfgame.firebasestorage.app",
+            messagingSenderId: "924992486895",
+            appId: "1:924992486895:web:734f9aae9b2d8ee557ca1a",
+            measurementId: "G-9S258D95H2"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
     <script src="javascript/audio.js"></script>
+    <script src="javascript/photoBingo.js"></script>
+
+    <script src="_framework/blazor.webassembly.js"></script>
 </body>
 
 </html>
