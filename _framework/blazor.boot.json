@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "EvjfGame",
   "resources": {
-    "hash": "sha256-/Cp6qrZta5u5iZj7KxAB0pIIaRBTS4u//EYViTzu/zo=",
+    "hash": "sha256-ZBhFp/24YRfjBvnoUwMzd4k8A/ncfo2cWfLRK1j68rA=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-xNQsYHtL1vcbrVTHDZAwJM4WovpoyjsrM2C6FQ8cW1w="
     },
@@ -18,7 +18,7 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "EvjfGame.wasm": "sha256-fY8mbKwEJoRA6wVbCKL1LAnIcL3IIX3J/xq0j9pi/9U=",
+      "EvjfGame.wasm": "sha256-KNRFUTPdVtPZJ27J8DvvmdquGMuDQZ/FCIPkqBp/v54=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-k+StqpMNVR0OTszGKEMzQV9neou3dRh2xzQzHGlTsvI=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-5L5OoM3VKlb7NCK0TrIc7E1/Wz75IGaDDydbhOahEmo=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-g89ZyzgJ823TqwG2mRV0v7+PyPBeygG8NBZzu44GlU4=",
